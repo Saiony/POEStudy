@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\caue\\gamedev\\poestudy\\poestudy\\source\\poestudy\\poestudy.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\caue\\gamedev\\poestudy\\poestudy\\intermediate\\build\\win64\\x64\\poestudyeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\caue\\gamedev\\poestudy\\poestudy\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\poestudy\\definitions.poestudy.h",
+            "d:\\caue\\gamedev\\poestudy\\poestudy\\source\\poestudy\\poestudy.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
