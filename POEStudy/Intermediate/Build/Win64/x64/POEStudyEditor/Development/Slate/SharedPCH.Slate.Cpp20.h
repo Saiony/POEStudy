@@ -1,0 +1,3 @@
+// PCH for Runtime/Slate/Public/SlateSharedPCH.h
+#include "D:/caue/gamedev/POEStudy/POEStudy/Intermediate/Build/Win64/x64/POEStudyEditor/Development/Slate/SharedDefinitions.Slate.Cpp20.h"
+#include "Runtime/Slate/Public/SlateSharedPCH.h"

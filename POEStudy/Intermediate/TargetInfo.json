@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "POEStudy",
+			"Path": "..\\Source\\POEStudy.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "POEStudyEditor",
+			"Path": "..\\Source\\POEStudyEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

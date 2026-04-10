@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\POEStudy.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\POEStudy.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\POEStudyEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\POEStudy">
+      <UniqueIdentifier>{0121E58D-BAA5-3E47-8CA3-3D68C29A4B3E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\POEStudy\POEStudy.Build.cs">
+      <Filter>Source\POEStudy</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudy.cpp">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudy.h">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudyCharacter.cpp">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudyCharacter.h">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudyGameMode.cpp">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudyGameMode.h">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudyPlayerController.cpp">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\POEStudyPlayerController.h">
+      <Filter>Source\POEStudy</Filter>
+    </ClCompile>
+    <Filter Include="Source\POEStudy\Private">
+      <UniqueIdentifier>{9FE0F170-47E3-3E68-8701-BC2C7E9EC44F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\POEStudy\Private\GAS">
+      <UniqueIdentifier>{71A4847C-6D43-3516-89AD-BBDF71387263}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\POEStudy\Private\GAS\POEAbilitySystemComponent.cpp">
+      <Filter>Source\POEStudy\Private\GAS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\Private\GAS\POEGameplayAbility.cpp">
+      <Filter>Source\POEStudy\Private\GAS</Filter>
+    </ClCompile>
+    <Filter Include="Source\POEStudy\Public">
+      <UniqueIdentifier>{8F296EBF-D1E0-33AD-A6F6-942190243925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\POEStudy\Public\GAS">
+      <UniqueIdentifier>{D0613E49-5F09-3E8F-9F2C-FEAC77A7298C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\POEStudy\Public\GAS\POEAbilitySystemComponent.h">
+      <Filter>Source\POEStudy\Public\GAS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\POEStudy\Public\GAS\POEGameplayAbility.h">
+      <Filter>Source\POEStudy\Public\GAS</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

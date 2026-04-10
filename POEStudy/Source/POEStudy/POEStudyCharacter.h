@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Public/GAS/POEAbilitySystemComponent.h"
 #include "POEStudyCharacter.generated.h"
 
 UCLASS(Blueprintable)
@@ -20,8 +21,16 @@ public:
 	/** Returns TopDownCameraComponent subobject **/
 	FORCEINLINE class UCameraComponent* GetTopDownCameraComponent() const { return TopDownCameraComponent; }
 	/** Returns CameraBoom subobject **/
-	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }
+	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }		
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "POE Study")
+	TObjectPtr<UPOEAbilitySystemComponent> AbilitySystemComp;
+	
+	UFUNCTION(BlueprintImplementableEvent, Category = "Movement")
+	void OnCharacterLanded(const FHitResult& Hit);
 
+	virtual void Landed(const FHitResult& Hit) override;
+	
 private:
 	/** Top down camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
