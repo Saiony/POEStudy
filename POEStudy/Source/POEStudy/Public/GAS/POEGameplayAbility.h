@@ -23,4 +23,7 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	APOEStudyPlayerController* GetPOEPlayerControllerFromActorInfo() const;
+	
+	UFUNCTION(BlueprintCallable, Category = "Ability")
+	FVector ClampDestination(const FVector& Origin, const FVector& Destination, float MaxDistance) const;
 };

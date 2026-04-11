@@ -41,3 +41,14 @@ APOEStudyPlayerController* UPOEGameplayAbility::GetPOEPlayerControllerFromActorI
 
 	return PC;
 }
+
+FVector UPOEGameplayAbility::ClampDestination(const FVector& Origin, const FVector& Destination, const float MaxDistance) const
+{
+	const FVector Direction = Destination - Origin;
+	float Distance = Direction.Size();
+
+	if (Distance <= MaxDistance)
+		return Destination;
+
+	return Origin + Direction.GetSafeNormal() * MaxDistance;
+}
