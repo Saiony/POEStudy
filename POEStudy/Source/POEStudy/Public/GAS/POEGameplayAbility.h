@@ -18,6 +18,12 @@ class POESTUDY_API UPOEGameplayAbility : public UGameplayAbility
 	GENERATED_BODY()
 
 public:
+	UPROPERTY(EditDefaultsOnly)
+	float Cost;
+
+	UPROPERTY(EditDefaultsOnly)
+	float CoolDown;
+	
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	APOEStudyCharacter* GetPOECharacterFromActorInfo() const;
 

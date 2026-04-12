@@ -3,12 +3,17 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "AbilitySystemInterface.h"
 #include "GameFramework/Character.h"
+#include "GAS/POECombatAttributeSet.h"
 #include "Public/GAS/POEAbilitySystemComponent.h"
 #include "POEStudyCharacter.generated.h"
 
+class UWidgetComponent;
+class UPOEAttributesWidget;
+
 UCLASS(Blueprintable)
-class APOEStudyCharacter : public ACharacter
+class APOEStudyCharacter : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
 
@@ -23,13 +28,25 @@ public:
 	/** Returns CameraBoom subobject **/
 	FORCEINLINE class USpringArmComponent* GetCameraBoom() const { return CameraBoom; }		
 	
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "POE Study")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "POE")
 	TObjectPtr<UPOEAbilitySystemComponent> AbilitySystemComp;
 	
-	UFUNCTION(BlueprintImplementableEvent, Category = "Movement")
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "POE", meta=(AllowPrivateAccess))
+	TObjectPtr<UPOECombatAttributeSet> CombatAttributeSet;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "POE")	
+	TObjectPtr<UWidgetComponent> AttributesWidgetComp;	
+
+	
+	UFUNCTION(BlueprintImplementableEvent, Category = "POE")
 	void OnCharacterLanded(const FHitResult& Hit);
 
 	virtual void Landed(const FHitResult& Hit) override;
+	
+	virtual void BeginPlay() override;
+	
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
+
 	
 private:
 	/** Top down camera */

@@ -9,6 +9,7 @@
 #include "GameFramework/SpringArmComponent.h"
 #include "Materials/Material.h"
 #include "Engine/World.h"
+#include "UI/POEAttributesWidget.h"
 
 APOEStudyCharacter::APOEStudyCharacter()
 {
@@ -44,6 +45,14 @@ APOEStudyCharacter::APOEStudyCharacter()
 	PrimaryActorTick.bStartWithTickEnabled = true;
 	
 	AbilitySystemComp = CreateDefaultSubobject<UPOEAbilitySystemComponent>(TEXT("ASC"));
+	
+	AttributesWidgetComp = CreateDefaultSubobject<UWidgetComponent>(TEXT("AttributesWidgetComponent"));
+	AttributesWidgetComp->SetupAttachment(RootComponent);
+	AttributesWidgetComp->SetWidgetSpace(EWidgetSpace::World);
+	AttributesWidgetComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	AttributesWidgetComp->SetWidgetClass(UPOEAttributesWidget::StaticClass());
+	
+	CombatAttributeSet = CreateDefaultSubobject<UPOECombatAttributeSet>("CombatAttributeSet");
 }
 
 void APOEStudyCharacter::Tick(float DeltaSeconds)
@@ -55,4 +64,17 @@ void APOEStudyCharacter::Landed(const FHitResult& Hit)
 {
 	Super::Landed(Hit);
 	OnCharacterLanded(Hit);
+}
+
+void APOEStudyCharacter::BeginPlay()
+{
+	Super::BeginPlay();
+	
+	auto AttributesWidget = Cast<UPOEAttributesWidget>(AttributesWidgetComp->GetUserWidgetObject());
+	AttributesWidget->InitWidget(AbilitySystemComp);
+}
+
+UAbilitySystemComponent* APOEStudyCharacter::GetAbilitySystemComponent() const
+{
+	return AbilitySystemComp;
 }
