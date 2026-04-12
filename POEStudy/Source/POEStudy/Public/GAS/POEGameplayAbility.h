@@ -24,6 +24,9 @@ public:
 	UPROPERTY(EditDefaultsOnly)
 	float CoolDown;
 	
+	UPROPERTY(EditDefaultsOnly)
+	float DamageMultiplier;
+	
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	APOEStudyCharacter* GetPOECharacterFromActorInfo() const;
 

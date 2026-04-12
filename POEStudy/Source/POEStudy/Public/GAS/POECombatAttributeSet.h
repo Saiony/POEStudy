@@ -47,4 +47,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData AttackSpeed = 1;
 	ATTRIBUTE_ACCESSORS(UPOECombatAttributeSet, AttackSpeed);	
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes")
+	FGameplayAttributeData BaseAttack = 15;
+	ATTRIBUTE_ACCESSORS(UPOECombatAttributeSet, BaseAttack);	
 };
