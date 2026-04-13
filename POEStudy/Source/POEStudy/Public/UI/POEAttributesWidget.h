@@ -34,6 +34,9 @@ public:
 	UPROPERTY(meta = (BindWidget))
 	TObjectPtr<UTextBlock> AttackSpeedText;
 	
+	UPROPERTY(meta = (BindWidget))
+	TObjectPtr<UTextBlock> StunnedText;
+	
 	void OnHealthChanged(const FOnAttributeChangeData& Data);
 	void OnMaxHealthChanged(const FOnAttributeChangeData& Data);
 	
@@ -41,4 +44,6 @@ public:
 	void OnMaxManaChanged(const FOnAttributeChangeData& Data);
 	
 	void OnAttackSpeedChanged(const FOnAttributeChangeData& Data);
+	
+	void OnStunChanged(FGameplayTag GameplayTag, int32 NewCount);
 };

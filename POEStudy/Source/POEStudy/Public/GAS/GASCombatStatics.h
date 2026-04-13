@@ -7,6 +7,7 @@
 #include "GASCombatStatics.generated.h"
 
 class UGameplayEffect;
+class UAbilitySystemComponent;
 /**
  * 
  */
@@ -16,8 +17,11 @@ class POESTUDY_API UGASCombatStatics : public UBlueprintFunctionLibrary
 	GENERATED_BODY()
 public:
 	UFUNCTION(BlueprintCallable)
-	static void ApplyEffectToActorsInSphere(AActor* Instigator, FVector Origin, float Radius, TSubclassOf<UGameplayEffect> EffectClass, float EffectLevel = 1.0f, float KnockbackForce = 0.0f);
+	static TArray<UAbilitySystemComponent*> GetActorsWithASCInSphere(const UObject* WorldContextObject, FVector Origin, float Radius, const TArray<AActor*>& IgnoredActors);
 	
 	UFUNCTION(BlueprintCallable)
 	static void ApplyKnockback(AActor* Target, FVector Origin, float KnockbackForce);
+	
+	UFUNCTION(BlueprintCallable)
+	static void ApplyEffectWithCustomDuration(UAbilitySystemComponent* InstigatorASC, UAbilitySystemComponent* TargetASC, TSubclassOf<UGameplayEffect> EffectClass, float Duration);
 };

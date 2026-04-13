@@ -19,6 +19,8 @@ void UPOEAttributesWidget::InitWidget(UPOEAbilitySystemComponent* ASC)
     ASC->GetGameplayAttributeValueChangeDelegate(UPOECombatAttributeSet::GetManaAttribute()).AddUObject(this, &UPOEAttributesWidget::OnManaChanged);
     ASC->GetGameplayAttributeValueChangeDelegate(UPOECombatAttributeSet::GetMaxManaAttribute()).AddUObject(this, &UPOEAttributesWidget::OnMaxManaChanged);
     ASC->GetGameplayAttributeValueChangeDelegate(UPOECombatAttributeSet::GetAttackSpeedAttribute()).AddUObject(this, &UPOEAttributesWidget::OnAttackSpeedChanged);
+    ASC->RegisterGameplayTagEvent(FGameplayTag::RequestGameplayTag("Ability.Stunned"), EGameplayTagEventType::NewOrRemoved).AddUObject(this, &UPOEAttributesWidget::OnStunChanged);
+
     
     HealthText->SetText(FText::AsNumber(ASC->GetNumericAttribute(UPOECombatAttributeSet::GetHealthAttribute())));
     MaxHealthText->SetText(FText::AsNumber(ASC->GetNumericAttribute(UPOECombatAttributeSet::GetMaxHealthAttribute())));
@@ -51,4 +53,14 @@ void UPOEAttributesWidget::OnMaxManaChanged(const FOnAttributeChangeData& Data)
 void UPOEAttributesWidget::OnAttackSpeedChanged(const FOnAttributeChangeData& Data)
 {
     AttackSpeedText->SetText(FText::AsNumber(Data.NewValue));
+}
+
+void UPOEAttributesWidget::OnStunChanged(FGameplayTag GameplayTag, int32 NewCount)
+{
+    const bool bIsStunned = NewCount > 0;
+    
+    if (bIsStunned)
+        StunnedText->SetVisibility(ESlateVisibility::Visible);
+    else
+        StunnedText->SetVisibility(ESlateVisibility::Hidden);        
 }

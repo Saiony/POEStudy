@@ -2,70 +2,31 @@
 
 
 #include "GAS/GASCombatStatics.h"
-
 #include "AbilitySystemComponent.h"
 #include "AbilitySystemInterface.h"
-#include "GameplayEffect.h"
 #include "GameFramework/Character.h"
 #include "Kismet/KismetSystemLibrary.h"
+#include "AbilitySystemBlueprintLibrary.h"
 
-class UAbilitySystemComponent;
-
-void UGASCombatStatics::ApplyEffectToActorsInSphere(AActor* Instigator, FVector Origin, float Radius, TSubclassOf<UGameplayEffect> EffectClass, float EffectLevel, float KnockbackForce)
+TArray<UAbilitySystemComponent*> UGASCombatStatics::GetActorsWithASCInSphere(const UObject* WorldContextObject, FVector Origin, float Radius, const TArray<AActor*>& IgnoredActors)
 {
-	if (!Instigator)
+	TArray<AActor*> OverlappedActors;
+	UKismetSystemLibrary::SphereOverlapActors(WorldContextObject, Origin, Radius, TArray<TEnumAsByte<EObjectTypeQuery>>(), 
+											  APawn::StaticClass(), IgnoredActors, OverlappedActors);
+
+	TArray<UAbilitySystemComponent*> ASCs;
+	for (const auto Actor : OverlappedActors)
 	{
-		UE_LOG(LogTemp, Error, TEXT("Instigator is null"));
-		return;
+		if (const auto ASCInterface = Cast<IAbilitySystemInterface>(Actor))
+		{
+			if (UAbilitySystemComponent* ASC = ASCInterface->GetAbilitySystemComponent())
+			{
+				ASCs.Add(ASC);
+			}
+		}
 	}
 	
-	if (!EffectClass)
-	{
-		UE_LOG(LogTemp, Error, TEXT("Instigator is null"));
-		return;
-	}
-
-	//DrawDebugSphere(Instigator->GetWorld(), Origin, Radius, 16, FColor::Red, false, 2.);		
-
-	UAbilitySystemComponent* InstigatorASC = nullptr;
-	const auto ASCInterface = Cast<IAbilitySystemInterface>(Instigator);
-	if (ASCInterface)	
-		InstigatorASC = ASCInterface->GetAbilitySystemComponent();
-
-	if (!InstigatorASC)
-		return;
-
-	TArray<AActor*> IgnoredActors;
-	IgnoredActors.Add(Instigator);
-
-	TArray<AActor*> OverlappedActors;
-	UKismetSystemLibrary::SphereOverlapActors(Instigator, Origin, Radius, TArray<TEnumAsByte<EObjectTypeQuery>>(), 
-											  APawn::StaticClass(),IgnoredActors, OverlappedActors);
-
-	const auto ContextHandle = InstigatorASC->MakeEffectContext();
-	const auto SpecHandle = InstigatorASC->MakeOutgoingSpec(EffectClass, EffectLevel, ContextHandle);
-
-	if (!SpecHandle.IsValid())
-		return;
-
-	for (const auto TargetActor : OverlappedActors)
-	{
-		if (!TargetActor)
-			continue;
-
-		const auto TargetInterface = Cast<IAbilitySystemInterface>(TargetActor);
-		if (!TargetInterface)
-			continue;
-
-		const auto TargetASC = TargetInterface->GetAbilitySystemComponent();
-		if (!TargetASC)
-			continue;
-
-		InstigatorASC->ApplyGameplayEffectSpecToTarget(*SpecHandle.Data.Get(), TargetASC);
-		
-		if (KnockbackForce != 0.0f)
-			ApplyKnockback(TargetActor, Origin, KnockbackForce);
-	}
+	return ASCs;
 }
 
 void UGASCombatStatics::ApplyKnockback(AActor* Target, FVector Origin, float KnockbackForce)
@@ -79,8 +40,16 @@ void UGASCombatStatics::ApplyKnockback(AActor* Target, FVector Origin, float Kno
 	}
 
 	const auto Direction = (Target->GetActorLocation() - Origin).GetSafeNormal();
-	const auto Distance = FVector::Dist(Target->GetActorLocation(), Origin);
 	const auto LaunchVelocity = Direction * KnockbackForce;
 
 	Character->LaunchCharacter(LaunchVelocity, true, true);
+}
+
+void UGASCombatStatics::ApplyEffectWithCustomDuration(UAbilitySystemComponent* InstigatorASC, UAbilitySystemComponent* TargetASC, TSubclassOf<UGameplayEffect> EffectClass, float Duration)
+{
+	FGameplayEffectContextHandle ContextHandle = InstigatorASC->MakeEffectContext();
+	FGameplayEffectSpecHandle SpecHandle = InstigatorASC->MakeOutgoingSpec(EffectClass, 1.0f, ContextHandle);
+	
+	UAbilitySystemBlueprintLibrary::AssignTagSetByCallerMagnitude(SpecHandle, FGameplayTag::RequestGameplayTag("Ability.Duration"), Duration);
+	InstigatorASC->ApplyGameplayEffectSpecToTarget(*SpecHandle.Data.Get(), TargetASC);
 }
