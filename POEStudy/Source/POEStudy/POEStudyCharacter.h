@@ -11,6 +11,7 @@
 
 class UWidgetComponent;
 class UPOEAttributesWidget;
+class UPOETweenComponent;
 
 UCLASS(Blueprintable)
 class APOEStudyCharacter : public ACharacter, public IAbilitySystemInterface
@@ -36,6 +37,9 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "POE")	
 	TObjectPtr<UWidgetComponent> AttributesWidgetComp;	
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "POE")
+	TObjectPtr<UPOETweenComponent> TweenComponent;
 
 	
 	UFUNCTION(BlueprintImplementableEvent, Category = "POE")

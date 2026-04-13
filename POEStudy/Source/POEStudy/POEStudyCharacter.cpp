@@ -10,6 +10,7 @@
 #include "Materials/Material.h"
 #include "Engine/World.h"
 #include "UI/POEAttributesWidget.h"
+#include "Components/POETweenComponent.h"
 
 APOEStudyCharacter::APOEStudyCharacter()
 {
@@ -53,6 +54,8 @@ APOEStudyCharacter::APOEStudyCharacter()
 	AttributesWidgetComp->SetWidgetClass(UPOEAttributesWidget::StaticClass());
 	
 	CombatAttributeSet = CreateDefaultSubobject<UPOECombatAttributeSet>("CombatAttributeSet");
+	
+	TweenComponent = CreateDefaultSubobject<UPOETweenComponent>(TEXT("TweenComponent"));
 }
 
 void APOEStudyCharacter::Tick(float DeltaSeconds)
