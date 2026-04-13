@@ -4,6 +4,7 @@
 #include "GameFramework/Pawn.h"
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "NiagaraSystem.h"
+#include "AbilitySystemGlobals.h"
 #include "NiagaraFunctionLibrary.h"
 #include "POEStudyCharacter.h"
 #include "Engine/World.h"
@@ -26,6 +27,17 @@ void APOEStudyPlayerController::BeginPlay()
 {
 	// Call the base class  
 	Super::BeginPlay();
+}
+
+void APOEStudyPlayerController::PostProcessInput(const float DeltaTime, const bool bGamePaused)
+{	
+	const auto ASC = Cast<UPOEAbilitySystemComponent>(UAbilitySystemGlobals::GetAbilitySystemComponentFromActor(GetPawn()));
+
+	if(!ASC)
+		return;
+
+	ASC->ProcessAbilityInput(DeltaTime, bGamePaused);
+	Super::PostProcessInput(DeltaTime, bGamePaused);
 }
 
 void APOEStudyPlayerController::SetupInputComponent()
