@@ -41,6 +41,8 @@ public:
 	/** Jump Input Action */
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category=Input, meta=(AllowPrivateAccess = "true"))
 	UInputAction* SetDestinationTouchAction;
+	
+	virtual void PostProcessInput(const float DeltaTime, const bool bGamePaused) override;
 
 protected:
 	/** True if the controlled character should navigate to the mouse cursor. */

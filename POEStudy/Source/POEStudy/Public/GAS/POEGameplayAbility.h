@@ -10,12 +10,35 @@ class APOEStudyCharacter;
 class APOEStudyPlayerController;
 
 /**
+ *	Defines how an ability is meant to activate.
+ */
+UENUM(BlueprintType)
+enum class EPOEAbilityActivationPolicy : uint8
+{
+	// Try to activate the ability when the input is triggered.
+	OnInputTriggered,
+
+	// Continually try to activate the ability while the input is active.
+	WhileInputActive,
+
+	// Try to activate the ability when an avatar is assigned.
+	OnSpawn
+};
+
+
+/**
  * 
  */
 UCLASS()
 class POESTUDY_API UPOEGameplayAbility : public UGameplayAbility
 {
 	GENERATED_BODY()
+	
+protected:
+	
+	// Defines how this ability is meant to activate.
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Ability")
+	EPOEAbilityActivationPolicy ActivationPolicy;
 
 public:
 	UPROPERTY(EditDefaultsOnly)
@@ -35,4 +58,6 @@ public:
 	
 	UFUNCTION(BlueprintCallable, Category = "Ability")
 	FVector ClampDestination(const FVector& Origin, const FVector& Destination, float MaxDistance) const;
+	
+	EPOEAbilityActivationPolicy GetActivationPolicy() const { return ActivationPolicy; }
 };

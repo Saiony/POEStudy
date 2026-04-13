@@ -1,6 +1,9 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
 
 #include "POEStudyCharacter.h"
+
+#include "EnhancedInputSubsystems.h"
+#include "POEEnhancedInputComponent.h"
 #include "UObject/ConstructorHelpers.h"
 #include "Camera/CameraComponent.h"
 #include "Components/CapsuleComponent.h"
@@ -11,6 +14,7 @@
 #include "Engine/World.h"
 #include "UI/POEAttributesWidget.h"
 #include "Components/POETweenComponent.h"
+#include "Data/POEAbilityData.h"
 
 APOEStudyCharacter::APOEStudyCharacter()
 {
@@ -73,6 +77,14 @@ void APOEStudyCharacter::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	if(const APlayerController* PlayerController = Cast<APlayerController>(Controller))
+	{
+		if(UEnhancedInputLocalPlayerSubsystem* Subsystem = ULocalPlayer::GetSubsystem<UEnhancedInputLocalPlayerSubsystem>(PlayerController->GetLocalPlayer()))
+		{
+			Subsystem->AddMappingContext(DefaultMappingContext, 0);
+		}
+	}
+	
 	auto AttributesWidget = Cast<UPOEAttributesWidget>(AttributesWidgetComp->GetUserWidgetObject());
 	AttributesWidget->InitWidget(AbilitySystemComp);
 }
@@ -80,4 +92,36 @@ void APOEStudyCharacter::BeginPlay()
 UAbilitySystemComponent* APOEStudyCharacter::GetAbilitySystemComponent() const
 {
 	return AbilitySystemComp;
+}
+
+void APOEStudyCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent)
+{
+	Super::SetupPlayerInputComponent(PlayerInputComponent);
+	
+	const auto InputComp = Cast<UPOEEnhancedInputComponent>(PlayerInputComponent);
+	if(!InputComp)
+	{
+		UE_LOG(LogTemp, Error, TEXT( "'%s' Failed to find an Enhanced Input component! This template is built to use the Enhanced Input system. "
+				   "If you intend to use the legacy system, then you will need to update this C++ file." ), *GetNameSafe(this));
+		return;
+	}
+
+	// This is where we actually bind and input action to a gameplay tag, which means that Gameplay Ability Blueprints will
+	// be triggered directly by these input actions Triggered events.
+	InputComp->BindAbilityActions(InputConfigDA, this, &ThisClass::Input_AbilityInputTagPressed, &ThisClass::Input_AbilityInputTagReleased, /*out*/ BindHandles);
+}
+
+void APOEStudyCharacter::Input_AbilityInputTagPressed(FGameplayTag InputTag)
+{
+	AbilitySystemComp->AbilityInputTagPressed(InputTag);
+}
+
+void APOEStudyCharacter::Input_AbilityInputTagReleased(FGameplayTag InputTag)
+{
+	AbilitySystemComp->AbilityInputTagReleased(InputTag);
+}
+
+void APOEStudyCharacter::GiveAbilityWithTag(UPOEAbilityData* AbilityData, FGameplayTag InputTag)
+{
+	AbilityData->GiveToAbilitySystem(AbilitySystemComp, GrantedHandles, InputTag);
 }

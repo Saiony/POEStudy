@@ -4,11 +4,15 @@
 
 #include "CoreMinimal.h"
 #include "AbilitySystemInterface.h"
+#include "Data/POEAbilityData.h"
 #include "GameFramework/Character.h"
 #include "GAS/POECombatAttributeSet.h"
+#include "Data/POEAbilityData.h"
 #include "Public/GAS/POEAbilitySystemComponent.h"
 #include "POEStudyCharacter.generated.h"
 
+class UInputMappingContext;
+class UPOEInputConfigDA;
 class UWidgetComponent;
 class UPOEAttributesWidget;
 class UPOETweenComponent;
@@ -17,6 +21,10 @@ UCLASS(Blueprintable)
 class APOEStudyCharacter : public ACharacter, public IAbilitySystemInterface
 {
 	GENERATED_BODY()
+	
+	TArray<uint32> BindHandles;
+	
+	FPOEAbilitySet_GrantedHandles* GrantedHandles;
 
 public:
 	APOEStudyCharacter();
@@ -41,6 +49,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "POE")
 	TObjectPtr<UPOETweenComponent> TweenComponent;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "POE")
+	TObjectPtr<UPOEInputConfigDA> InputConfigDA;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "POE", meta = (AllowPrivateAccess = "true"))
+	TObjectPtr<UInputMappingContext> DefaultMappingContext;
 	
 	UFUNCTION(BlueprintImplementableEvent, Category = "POE")
 	void OnCharacterLanded(const FHitResult& Hit);
@@ -50,8 +63,14 @@ public:
 	virtual void BeginPlay() override;
 	
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
-
 	
+	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void Input_AbilityInputTagPressed(FGameplayTag InputTag);
+	void Input_AbilityInputTagReleased(FGameplayTag InputTag);
+	
+	UFUNCTION(BlueprintCallable, Category = "POE")
+	void GiveAbilityWithTag(UPOEAbilityData* AbilityData, FGameplayTag InputTag);
+
 private:
 	/** Top down camera */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera, meta = (AllowPrivateAccess = "true"))
