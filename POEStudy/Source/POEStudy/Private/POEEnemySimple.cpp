@@ -18,7 +18,7 @@ APOEEnemySimple::APOEEnemySimple()
 	
 	AttributesWidgetComp = CreateDefaultSubobject<UWidgetComponent>(TEXT("AttributesWidgetComponent"));
 	AttributesWidgetComp->SetupAttachment(RootComponent);
-	AttributesWidgetComp->SetWidgetSpace(EWidgetSpace::World);
+	AttributesWidgetComp->SetWidgetSpace(EWidgetSpace::Screen);
 	AttributesWidgetComp->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	AttributesWidgetComp->SetWidgetClass(UPOEAttributesWidget::StaticClass());
 	
