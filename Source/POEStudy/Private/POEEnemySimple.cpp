@@ -3,6 +3,7 @@
 
 #include "POEEnemySimple.h"
 
+#include "Components/StateTreeComponent.h"
 #include "Components/WidgetComponent.h"
 #include "GAS/POECombatAttributeSet.h"
 #include "UI/POEAttributesWidget.h"
@@ -23,6 +24,7 @@ APOEEnemySimple::APOEEnemySimple()
 	AttributesWidgetComp->SetWidgetClass(UPOEAttributesWidget::StaticClass());
 	
 	CombatAttributeSet = CreateDefaultSubobject<UPOECombatAttributeSet>("CombatAttributeSet");
+	StateTreeComp = CreateDefaultSubobject<UStateTreeComponent>("StateTreeComp");
 }
 
 // Called when the game starts or when spawned
@@ -30,8 +32,21 @@ void APOEEnemySimple::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	auto& HealthDelegate = AbilitySystemComp->GetGameplayAttributeValueChangeDelegate(UPOECombatAttributeSet::GetHealthAttribute());
+	HealthDelegate.AddUObject(this, &ThisClass::HealthChanged);
+	
 	auto AttributesWidget = Cast<UPOEAttributesWidget>(AttributesWidgetComp->GetUserWidgetObject());
-	AttributesWidget->InitWidget(AbilitySystemComp);
+	AttributesWidget->InitWidget(AbilitySystemComp);	
+}
+
+void APOEEnemySimple::HealthChanged(const FOnAttributeChangeData& Data)
+{
+	const auto Delta = Data.NewValue - Data.OldValue;
+	
+	if (Delta < 0)
+	{
+		StateTreeComp->SendStateTreeEvent(FGameplayTag::RequestGameplayTag(FName("Combat.State.HitReact")));
+	}
 }
 
 // Called every frame

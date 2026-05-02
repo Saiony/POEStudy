@@ -4,9 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "AbilitySystemInterface.h"
+#include "GameplayEffectTypes.h"
 #include "GameFramework/Character.h"
 #include "POEEnemySimple.generated.h"
 
+class UStateTreeComponent;
 class UWidgetComponent;
 class UPOECombatAttributeSet;
 class UPOEAbilitySystemComponent;
@@ -22,7 +24,7 @@ public:
 
 protected:
 	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	virtual void BeginPlay() override;	
 
 public:
 	// Called every frame
@@ -41,4 +43,9 @@ public:
 	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "POE")
 	TObjectPtr<UWidgetComponent> AttributesWidgetComp;
+	
+	UPROPERTY(EditAnywhere, Category="Forge")
+	TObjectPtr<UStateTreeComponent> StateTreeComp;
+	
+	void HealthChanged(const FOnAttributeChangeData& Data);
 };

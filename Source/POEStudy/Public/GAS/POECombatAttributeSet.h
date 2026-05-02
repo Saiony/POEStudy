@@ -51,4 +51,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Attributes")
 	FGameplayAttributeData BaseAttack = 15;
 	ATTRIBUTE_ACCESSORS(UPOECombatAttributeSet, BaseAttack);	
+	
+	
 };

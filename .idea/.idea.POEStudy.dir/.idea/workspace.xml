@@ -6,8 +6,48 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="05cfc2a0-bb0d-4955-97ee-009eb21aea9e" name="Changes" comment="" />
+    <list default="true" id="05cfc2a0-bb0d-4955-97ee-009eb21aea9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Animations/AS_DGS_ComboB4_Montage.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/TopDown/Animations/AS_DGS_ComboB5_Montage.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/AnimNotify/POEMeleeAttackWindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEComboGameplayAbility.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/Tasks/POEAbilityTask_MeleeTrace.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/POEComboWindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEAttackWindowData.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEMeleeAttackWindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEComboGameplayAbility.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/Tasks/POEAbilityTask_MeleeTrace.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/POEComboWindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/DynamicGreatSwordAnims/Demo/Characters/Mannequin_UE4/Meshes/SKM_Mannequin_DGS.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/DynamicGreatSwordAnims/Demo/Characters/Mannequin_UE5/Meshes/SKM_Manny_DGS.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB4.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB5.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/Skill/AS_DGS_Skill_C.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/Skill/AS_DGS_Skill_C.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_EnemySimple.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_EnemySimple.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_Zenith.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_Zenith.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GE_Damage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GE_Damage.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POEStudy.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/POEStudy.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/POEStudy.uproject.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/POEStudy.uproject.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/POEStudy.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/POEStudy.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEGameplayAbility.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Private/POEEnemySimple.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Private/POEEnemySimple.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POECombatAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POECombatAttributeSet.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEGameplayAbility.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/POEEnemySimple.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/POEEnemySimple.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,44 +57,35 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="17952" />
+    <option name="cachedIndexableFilesCount" value="3338" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Plugins/Runtime/GameplayAbilities/Source/GameplayAbilities/Private/Abilities/Tasks/AbilityTask_ApplyRootMotionJumpForce.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Developer/SlateReflector/Private/Widgets/SWidgetReflector.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Developer/TraceInsightsCore/Public/InsightsCore/Common/PaintUtils.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Editor/Kismet/Private/BPDelegateDragDropAction.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/AIModule/Classes/BehaviorTree/Decorators/BTDecorator_Cooldown.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectHandle.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/CoreUObject/Public/UObject/ObjectPtr.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Classes/Engine/LatentActionManager.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Classes/GameFramework/PlayerController.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Private/CharacterMovementComponentAsync.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Private/TickTaskManager.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Public/Animation/AttributesRuntime.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Engine/Public/ISMPartition/ISMComponentBatcher.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/MeshDescription/Public/MeshAttributeArray.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Navmesh/Public/Detour/DetourNavLinkBuilder.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Source/Runtime/Navmesh/Public/Detour/DetourNavLinkBuilderConfig.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/AnimNotify/POEMeleeAttackWindow.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/Data/POEAbilityData.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/Data/POEInputConfigDA.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/GAS/GASCombatStatics.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEComboGameplayAbility.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEDamageCalculation.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEGameplayAbility.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/GAS/Tasks/POEAbilityTask_MeleeTrace.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/POEComboWindow.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/POEEnemySimple.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/POEEnhancedInputComponent.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Private/POETweenSubsystem.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEAttackWindowData.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEMeleeAttackWindow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/Data/POEAbilityData.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/GAS/GASCombatStatics.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEComboGameplayAbility.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEDamageCalculation.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEGameplayAbility.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/GAS/Tasks/POEAbilityTask_MeleeTrace.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/POEComboWindow.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/POEEnemySimple.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/POEEnhancedInputComponent.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/POEStudy/Public/POETweenSubsystem.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -73,38 +104,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;Uproject.POEStudy.executor&quot;: &quot;Run&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;polish-v1&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;junie.allowlist&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Uproject.POEStudy.executor": "Debug",
+    "cidr.known.project.marker": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "zenith",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "Markdown"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="POEStudy" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
         <option name="CONFIGURATION" value="DebugGame Editor" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Binaries/Win64/UnrealEditor-Win64-DebugGame.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\caue\gamedev\POEStudy\POEStudy\POEStudy.uproject&quot;" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.6/Engine/Binaries/Win64/UnrealEditor-Win64-DebugGame.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\caue\gamedev\POEStudy\POEStudy.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.5" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -117,7 +157,7 @@
         <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/POEStudy-Win64-DebugGame.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.5" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -127,10 +167,10 @@
         <option name="CONFIGURATION" value="Development Editor" />
         <option name="PLATFORM" value="Win64" />
         <option name="CURRENT_LAUNCH_PROFILE" value="Local" />
-        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../../Program Files/Epic Games/UE_5.5/Engine/Binaries/Win64/UnrealEditor.exe" />
-        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\caue\gamedev\POEStudy\POEStudy\POEStudy.uproject&quot;" />
+        <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.6/Engine/Binaries/Win64/UnrealEditor.exe" />
+        <option name="MANDATORY_PROGRAM_PARAMETERS" value=" &quot;D:\caue\gamedev\POEStudy\POEStudy.uproject&quot;" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.5" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -143,7 +183,7 @@
         <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/POEStudy.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.5" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -156,7 +196,7 @@
         <option name="EXECUTABLE_PATH" value="$PROJECT_DIR$/Binaries/Win64/POEStudy-Win64-Shipping.exe" />
         <option name="MANDATORY_PROGRAM_PARAMETERS" value="" />
         <option name="CUSTOM_PROGRAM_PARAMETERS" value="" />
-        <option name="WORKING_DIRECTORY" value="D:\Program Files\Epic Games\UE_5.5" />
+        <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Program Files/Epic Games/UE_5.6" />
         <option name="PASS_PARENT_ENVS" value="1" />
         <option name="USE_EXTERNAL_CONSOLE" value="1" />
         <option name="TERMINAL_INTERACTION_BEHAVIOR" value="FORCE_CONSOLE" />
@@ -191,6 +231,9 @@
       <workItem from="1776947642027" duration="12211000" />
       <workItem from="1777051975742" duration="6010000" />
       <workItem from="1777310601036" duration="8652000" />
+      <workItem from="1777476602887" duration="16417000" />
+      <workItem from="1777566378970" duration="17707000" />
+      <workItem from="1777653761719" duration="15598000" />
     </task>
     <servers />
   </component>
@@ -203,20 +246,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.OperationCanceledException" breakIfHandledByOtherCode="false" displayValue="System.OperationCanceledException" />
-          <option name="timeStamp" value="1" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.Tasks.TaskCanceledException" breakIfHandledByOtherCode="false" displayValue="System.Threading.Tasks.TaskCanceledException" />
-          <option name="timeStamp" value="2" />
-        </breakpoint>
-        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
-          <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
-          <option name="timeStamp" value="3" />
-        </breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="DotNet_Exception_Breakpoints" />
+        <breakpoint type="CMakeExceptionBreakpoint" />
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

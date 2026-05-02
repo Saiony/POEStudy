@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Abilities/GameplayAbility.h"
+#include "Tasks/POEAbilityTask_MeleeTrace.h"
 #include "POEGameplayAbility.generated.h"
 
 class APOEStudyCharacter;
@@ -34,12 +35,26 @@ class POESTUDY_API UPOEGameplayAbility : public UGameplayAbility
 {
 	GENERATED_BODY()
 	
-protected:
-	
+protected:	
 	// Defines how this ability is meant to activate.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Ability")
 	EPOEAbilityActivationPolicy ActivationPolicy;
+	
+	FDelegateHandle DelegateHandle;
+	
+	UPROPERTY()
+	TObjectPtr<UPOEAbilityTask_MeleeTrace> ActiveMeleeTrace;
 
+	UFUNCTION()
+	void OnHitWindowStart(FGameplayEventData Payload);
+
+	UFUNCTION()
+	void OnHitWindowEnd(FGameplayEventData Payload);
+
+	virtual void ActivateAbility(const FGameplayAbilitySpecHandle Handle, const FGameplayAbilityActorInfo* ActorInfo, const FGameplayAbilityActivationInfo ActivationInfo, const FGameplayEventData* TriggerEventData) override;
+
+	virtual void OnPressCallback();
+	
 public:
 	UPROPERTY(EditDefaultsOnly)
 	float Cost;
@@ -60,4 +75,10 @@ public:
 	FVector ClampDestination(const FVector& Origin, const FVector& Destination, float MaxDistance) const;
 	
 	EPOEAbilityActivationPolicy GetActivationPolicy() const { return ActivationPolicy; }
+	
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ability")
+	void OnInputPressed();	
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Ability")
+	void OnHitDetected(const TArray<UAbilitySystemComponent*>& Array);
 };
