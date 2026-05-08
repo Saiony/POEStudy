@@ -14,39 +14,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05cfc2a0-bb0d-4955-97ee-009eb21aea9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Content/TopDown/Animations/AS_DGS_ComboB4_Montage.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Content/TopDown/Animations/AS_DGS_ComboB5_Montage.uasset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/AnimNotify/POEMeleeAttackWindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEComboGameplayAbility.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/Tasks/POEAbilityTask_MeleeTrace.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Private/POEComboWindow.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEAttackWindowData.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEMeleeAttackWindow.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEComboGameplayAbility.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/Tasks/POEAbilityTask_MeleeTrace.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/POEStudy/Public/POEComboWindow.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/DynamicGreatSwordAnims/Demo/Characters/Mannequin_UE4/Meshes/SKM_Mannequin_DGS.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/DynamicGreatSwordAnims/Demo/Characters/Mannequin_UE5/Meshes/SKM_Manny_DGS.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA1.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboA2.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB4.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB4.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB5.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/ComboAttack/AS_DGS_ComboB5.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/Skill/AS_DGS_Skill_C.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Plugins/DynamicGreatSwordAnims/Animations/RootMotion/Manny_UE5/Skill/AS_DGS_Skill_C.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_EnemySimple.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_EnemySimple.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_Zenith.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_Zenith.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GE_Damage.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GE_Damage.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POEStudy.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/POEStudy.uproject" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/POEStudy.uproject.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/POEStudy.uproject.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/POEStudy/POEStudy.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/POEStudy.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEGameplayAbility.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/POEGameplayAbility.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Private/POEEnemySimple.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Private/POEEnemySimple.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POECombatAttributeSet.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POECombatAttributeSet.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEGameplayAbility.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/GAS/POEGameplayAbility.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/POEEnemySimple.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/POEEnemySimple.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/M_Solid.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/M_Solid.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/M_Spark.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/M_Spark.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/m_flare_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/m_flare_01.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC_HitReact_Fire.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC_HitReact_Fire.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/MI_AguiarSlash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/MI_AguiarSlash.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_AguiarSlash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_AguiarSlash.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_FireTrail.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_FireTrail.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_GroundCrack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_GroundCrack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_Smoke.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_Smoke.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/VFX/NS_AguiarSlash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VFX/NS_AguiarSlash.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/VFX/NS_RadialImpact.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/TopDownMap/0/TH/TYUKAILBM9D8C6Q3OPLHOB.uasset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +106,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "CodeLensConfigurable",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   },
@@ -234,6 +215,8 @@
       <workItem from="1777476602887" duration="16417000" />
       <workItem from="1777566378970" duration="17707000" />
       <workItem from="1777653761719" duration="15598000" />
+      <workItem from="1778076712629" duration="173000" />
+      <workItem from="1778076995725" duration="953000" />
     </task>
     <servers />
   </component>
@@ -242,6 +225,9 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+    </ignored-roots>
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
