@@ -77,14 +77,14 @@ void UPOEAbilityTask_MeleeTrace::PerformTrace()
         {
             TArray<FOverlapResult> Overlaps;
             World->OverlapMultiByChannel(Overlaps, Origin, FQuat::Identity, ECC_Pawn,
-                                                FCollisionShape::MakeSphere(CachedWindowData->TraceSize), Params);
+                                                FCollisionShape::MakeSphere(CachedWindowData->TraceSizeA), Params);
                 
             for (const auto& Overlap : Overlaps)
                 TryAddASC(Overlap.GetActor(), HitASCs);
                 
             if (CVarDebugMeleeTrace.GetValueOnGameThread())
             {
-                DrawDebugSphere(GetWorld(), Origin, CachedWindowData->TraceSize, 16, 
+                DrawDebugSphere(GetWorld(), Origin, CachedWindowData->TraceSizeA, 16, 
                                 HitASCs.Num() > 0 ? FColor::Red : FColor::Green, false, 0.1f);
             }
                 
@@ -94,14 +94,14 @@ void UPOEAbilityTask_MeleeTrace::PerformTrace()
         {
             TArray<FOverlapResult> Overlaps;
             World->OverlapMultiByChannel(Overlaps, Origin, Rotation, ECC_Pawn,
-                                                FCollisionShape::MakeBox(FVector(CachedWindowData->TraceSize)), Params);
+                                                FCollisionShape::MakeBox(FVector(CachedWindowData->TraceSizeA)), Params);
                 
             for (const auto& Overlap : Overlaps)
                 TryAddASC(Overlap.GetActor(), HitASCs);
                 
                 if (CVarDebugMeleeTrace.GetValueOnGameThread())
                 {
-                    DrawDebugBox(GetWorld(), Origin, FVector(CachedWindowData->TraceSize), Rotation,
+                    DrawDebugBox(GetWorld(), Origin, FVector(CachedWindowData->TraceSizeA), Rotation,
                    HitASCs.Num() > 0 ? FColor::Red : FColor::Green, false, 0.1f);
                 }
                 
@@ -110,7 +110,7 @@ void UPOEAbilityTask_MeleeTrace::PerformTrace()
         case EAttackTraceShape::Line:
         {
             TArray<FHitResult> HitResults;
-            const FVector End = Origin + Character->GetActorForwardVector() * CachedWindowData->TraceSize;
+            const FVector End = Origin + Character->GetActorForwardVector() * CachedWindowData->TraceSizeA;
                 
             World->LineTraceMultiByChannel(HitResults, Origin, End, ECC_Pawn, Params);
                 
@@ -127,20 +127,20 @@ void UPOEAbilityTask_MeleeTrace::PerformTrace()
         }
         case EAttackTraceShape::Capsule:
         {
-            const FVector CapsuleCenter = Origin + Rotation.GetUpVector() * CachedWindowData->TraceSize;
+            const FVector CapsuleCenter = Origin + Rotation.GetUpVector() * CachedWindowData->TraceSizeA;
             TArray<FOverlapResult> Overlaps;
             World->OverlapMultiByChannel(Overlaps, CapsuleCenter, Rotation, ECC_Pawn,
-                                                FCollisionShape::MakeCapsule(CachedWindowData->TraceSize / 10, CachedWindowData->TraceSize), 
+                                                FCollisionShape::MakeCapsule(CachedWindowData->TraceSizeB, CachedWindowData->TraceSizeA), 
                                                 Params);
                 
             for (const auto& Overlap : Overlaps)
                 TryAddASC(Overlap.GetActor(), HitASCs);
                 
-                if (CVarDebugMeleeTrace.GetValueOnGameThread())
-                {
-                    DrawDebugCapsule(GetWorld(), CapsuleCenter, CachedWindowData->TraceSize, CachedWindowData->TraceSize / 10,
-                    Rotation, HitASCs.Num() > 0 ? FColor::Red : FColor::Green, false, 0.1f);
-                }
+            if (CVarDebugMeleeTrace.GetValueOnGameThread())
+            {
+                DrawDebugCapsule(GetWorld(), CapsuleCenter, CachedWindowData->TraceSizeA, CachedWindowData->TraceSizeB,
+                Rotation, HitASCs.Num() > 0 ? FColor::Red : FColor::Green, false, 0.1f);
+            }
                 
             break;
         }

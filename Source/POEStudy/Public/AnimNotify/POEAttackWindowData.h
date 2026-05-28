@@ -23,12 +23,16 @@ public:
 	EAttackTraceShape TraceShape;
 
 	UPROPERTY()
-	float TraceSize;
+	float TraceSizeA;
+	
+	UPROPERTY()
+	float TraceSizeB;
 
-	void Init(const FName InSocket, const EAttackTraceShape InTraceShape, const float InTraceSize)
+	void Init(const FName InSocket, const EAttackTraceShape InTraceShape, const float InTraceSizeA, const float InTraceSizeB)
 	{
 		Socket = InSocket;
 		TraceShape = InTraceShape;
-		TraceSize = InTraceSize;
+		TraceSizeA = InTraceSizeA;
+		TraceSizeB = InTraceSizeB;
 	}
 };

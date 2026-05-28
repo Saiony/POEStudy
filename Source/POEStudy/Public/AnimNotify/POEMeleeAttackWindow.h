@@ -39,7 +39,11 @@ public:
 	
 	//Generic size for every TraceShapeType
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack Window")
-	float TraceSize = 1;
+	float TraceSizeA = 1;
+	
+	//Generic size for every TraceShapeType
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Attack Window")
+	float TraceSizeB = 1;
 	
 	virtual void NotifyBegin(USkeletalMeshComponent* MeshComp, UAnimSequenceBase* Animation, float TotalDuration, const FAnimNotifyEventReference& EventReference) override;
 	

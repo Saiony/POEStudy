@@ -23,7 +23,7 @@ void UPOEMeleeAttackWindow::NotifyBegin(USkeletalMeshComponent* MeshComp, UAnimS
 	}
 	
 	auto AttackWindowData = NewObject<UPOEAttackWindowData>(Owner);
-	AttackWindowData->Init(Socket, TraceShapeType, TraceSize);
+	AttackWindowData->Init(Socket, TraceShapeType, TraceSizeA, TraceSizeB);
 	
 	FGameplayEventData EventData;
 	EventData.OptionalObject = AttackWindowData;

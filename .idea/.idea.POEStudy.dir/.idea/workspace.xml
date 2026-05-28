@@ -16,18 +16,23 @@
     <list default="true" id="05cfc2a0-bb0d-4955-97ee-009eb21aea9e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.POEStudy.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/M_Solid.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/LevelPrototyping/Materials/M_Solid.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/M_Spark.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/M_Spark.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/m_flare_01.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Particles/Materials/m_flare_01.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC_HitReact_Fire.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC_HitReact_Fire.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/MI_AguiarSlash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/MI_AguiarSlash.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_AguiarSlash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_AguiarSlash.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_FireTrail.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_FireTrail.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_GroundCrack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_GroundCrack.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/Materials/M_Smoke.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Materials/M_Smoke.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VFX/NS_AguiarSlash.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VFX/NS_AguiarSlash.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/TopDown/VFX/NS_RadialImpact.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/TopDownMap/0/TH/TYUKAILBM9D8C6Q3OPLHOB.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGameplayTags.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Animations/AM_JumpAttack.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Animations/AM_JumpAttack.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Animations/AM_Zenith1.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Animations/AM_Zenith1.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Animations/AM_Zenith2.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Animations/AM_Zenith2.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Animations/POE_AS_DGS_Skill_C.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Animations/POE_AS_DGS_Skill_C.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_CameraShaker.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_CameraShaker.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/BP_TopDownCharacter.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_LeapSlam.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_LeapSlam.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_Zenith.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GA/GA_Zenith.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC/GC_HitReact_Fire.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC/GC_HitReact_Fire.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC/GC_ZenithImpact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/Blueprints/GAS/GC/GC_ZenithImpact.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/TopDown/VFX/NS_ZenithImpact.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/TopDown/VFX/NS_ZenithImpact.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/TopDownMap/4/OB/UE797FL8JPMDZ27UFM0IFO.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/__ExternalActors__/TopDown/Maps/TopDownMap/4/OB/UE797FL8JPMDZ27UFM0IFO.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Private/AnimNotify/POEMeleeAttackWindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Private/AnimNotify/POEMeleeAttackWindow.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/Tasks/POEAbilityTask_MeleeTrace.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Private/GAS/Tasks/POEAbilityTask_MeleeTrace.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEAttackWindowData.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEAttackWindowData.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEMeleeAttackWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/POEStudy/Public/AnimNotify/POEMeleeAttackWindow.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,37 +90,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Uproject.POEStudy.executor": "Debug",
-    "cidr.known.project.marker": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "zenith",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Uproject.POEStudy.executor&quot;: &quot;Run&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;zenith&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "Markdown"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Markdown&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="POEStudy" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -217,6 +222,9 @@
       <workItem from="1777653761719" duration="15598000" />
       <workItem from="1778076712629" duration="173000" />
       <workItem from="1778076995725" duration="953000" />
+      <workItem from="1778244915990" duration="9040000" />
+      <workItem from="1778280782118" duration="887000" />
+      <workItem from="1778505072704" duration="3760000" />
     </task>
     <servers />
   </component>
